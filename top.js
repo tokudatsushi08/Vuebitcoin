@@ -11,7 +11,7 @@
                     return response.json();
                 })
                 .then(function (json) {
-                    // console.log(json.bpi.USD.rate_float);
+                    console.log(json);
                     this.bpi = json.bpi;
                 }.bind(this))
                 .catch(function (error) {
