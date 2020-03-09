@@ -5,6 +5,7 @@
             bpi: null,
         },
         mounted: function () {
+            // fetchを使ったAPIの取得について
             fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
                 .then(function (response) {
                     return response.json();
